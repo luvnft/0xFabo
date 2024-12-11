@@ -1,98 +1,79 @@
 ---
 import ContentSection from "~/components/content-section.astro";
-import LottieAnimation from "astro-integration-lottie/Lottie.astro";
 import type { ServiceItem } from "~/types";
 import FeaturesList from "~/components/features-list.astro";
 
 const services: Array<ServiceItem> = [
   { 
-    title: "HAHZ.ARVRTISE", 
-    subtitle: "Bitcoin Reddit", 
-    description: "As the pioneer in tokenizing commercial real estate, Wizard of Hahz has created a Bitcoin-powered Reddit platform. This platform utilizes upvotes and downvotes via Bitcoin zaps to help investors discover the hottest opportunities in commercial real estate.", 
+    title: "W3W", 
+    subtitle: "MARKET", 
+    description: "We're tokenizing all of the 510 trillion unique What3Words addresses as W3W properties.", 
     img: "socialMedia", 
-    list1: "Strategic management of communication across relevant social media platforms.", 
-    list2: "Amplification of your brand in digital landscapes.", 
-    list3: "Enhancement of your tokenized digital properties", 
-    list4: "Continuous optimization of your digital presence.", 
+    emoji: "🌍", // Unique emoji for this service
   },
   { 
-    title: "DISCORD", 
-    subtitle: "Bitcoin Linkedin", 
-    description: "Investors, brokers, and service providers have united to take control of their tokenized real-world assets (RWA), eliminating the middleman and enabling the sale of tokenized commercial real estate in a day rather than a year, bypassing traditional gatekeeping platforms.", 
+    title: "3 Words", 
+    subtitle: "K.I.S.S", 
+    description: "Sharing 3 word addresses shows that you keep it simple, owning 3 word addresses as a Bitcoin W3W shows the world you're smart.", 
     img: "branding", 
-    list1: "Crafting 1 of 1 Bitcoin CRE", 
-    list2: "Thorough review of corporate image, colors, and identity.", 
-    list3: "Transformation of ideas into a visually impactful identity.", 
-    list4: "Standing out in the marketplace with a cohesive and compelling visual communication.", 
+    emoji: "💬", // Unique emoji for this service
   },
   {
-    title: "$RNT",
-    subtitle: "Accept Bitcoin",
-    description: "Accept Bitcoin $RNT with $0 fees in a branded CRE CLUB Discord channel. This allows your tenants to pay rent and submit property issues, mapped to a What3Words.com address. Service providers can then address these issues, submit proof, and receive payment in Bitcoin $RNT or L$VE.",
+    title: "SELL",
+    subtitle: "BAG",
+    description: "Sell your W3W attached or detached from a physical RWA with no middleman in the CRE CLUB marketplace and earn Bitcoin",
     img: "grMkt",
-    list1: "Create affordable CRE rentals.",
-    list2: "Development of effective strategies through testing and data analysis.",
-    list3: "Continuous improvement to reach new levels of success.",
-    list4: "Focus on optimization and long-term success.",
+    emoji: "💰", // Unique emoji for this service
   },
   { 
-    title: "MARKET.ARVRTISE",
-    subtitle: "Accept Bitcoin",
-    description: "Traditional CRE marketplaces are increasing their prices and hidden fees. We offer both non-members and members a free CRE marketplace where brokers and investors can accept Bitcoin Sats (the smallest unit of Bitcoin) through our Arvrtise Market.", 
+    title: "AD",
+    subtitle: "SHOP",
+    description: "Create a W3W for a physical product location in a store mapped to a three.word.address. Accept Bitcoin and give the physical product away for free.", 
     img: "socialAds", 
-    list1: "Design and execution of high-impact social media campaigns.", 
-    list2: "Focus on key objectives such as online sales, lead generation, and branding.", 
-    list3: "Tangible results in the short term to drive the success of your business.", 
-    list4: "Campaigns focused on increasing foot traffic and calls.", 
+    emoji: "🛍️", // Unique emoji for this service
   },
   { 
-    title: "Web Development", 
-    subtitle: "Custom Websites", 
-    description: "We build custom Arvrtise websites, marketplaces, landing pages, and branded linktree-like sites. We also create branded social media AR effects to promote your tokenized RWA (Real World Assets). For CRE CLUB members, we offer a 24-hour turnaround time for tokenizing RWA as Bitcoin.", 
+    title: "CONTRACT", 
+    subtitle: "SMART", 
+    description: "We customize the smart contract for W3W based on the specific use case agreed upon when the buyer transfers the payment, which is upheld in a court of law.", 
     img: "webDev", 
-    list1: "Custom websites that reflect the unique essence of your brand.", 
-    list2: "Responsive across all devices.", 
-    list3: "Engaging design that captivates your audience.", 
-    list4: "Implementation of the latest technologies for an optimal online presence.", 
+    emoji: "✍️", // Unique emoji for this service
   },
   { 
-    title: "REEL ADS", 
-    subtitle: "Reel Estate", 
-    description: "We put the commercial in real estate with Reel ads that showcase real estate on social media in a cool way. TikTok is the #1 search engine for real estate, and @CRECLUB is the hottest CRE channel for investors around the world.", 
+    title: "TIKTOK", 
+    subtitle: "PROMO", 
+    description: "We promote your W3W on the @CRECLUB TikTok through reels, branded effects, or paid ad campaigns by creating the content for you.", 
     img: "edVideos", 
-    list1: "Captivating videos that amplify your message in a unique way.", 
-    list2: "Expert editing that sets you apart and positions you for organic growth.", 
-    list3: "Especially effective on platforms like TikTok and Instagram.", 
-    list4: "Maximize the impact of your video content.", 
+    emoji: "🎥", // Unique emoji for this service
   },
   { 
-    title: "Linktree", 
-    subtitle: "Lintr.ee/creclub", 
-    description: "Times have changed, and people are more connected to their favorite social media platforms than ever. That's why we've created CREtree, a powerful tool using Linktree to showcase CRE CLUB members' properties in a dedicated shop and display their bios and achievements in one convenient link.", 
+    title: "W3WTREE", 
+    subtitle: "LINK IN BIO", 
+    description: "We united the real estate on the W3Wtree, to showcase CRE CLUB members' properties and display their bios/wallet address and achievements in one link.", 
     img: "seo", 
-    list1: "Advanced strategies to boost your online presence.", 
-    list2: "Organic search engine ranking optimization.", 
-    list3: "Consistent increase in potential customers to your website.", 
-    list4: "Fueling the growth of your business through effective strategies.", 
+    emoji: "🔗", // Unique emoji for this service
   },
   { 
-    title: "Live Auctions", 
-    subtitle: "Live Tours", 
-    description: "To expedite the traditionally lengthy CRE selling process, we’ve created TikTok effects for every stage of a CRE deal. We also host live CRE tours and auctions on a live platform, complete with a chat feature for Q&A. Bitcoin $RNT is used for bidding, and final deals are sealed in a private Discord or Telegram channel.", 
+    title: "GUIDE", 
+    subtitle: "RWA", 
+    description: "Once you eliminate the middleman by tokenizing your RWA as a W3W property, we guide members by answering any Bitcoin real estate-related questions.", 
     img: "sem", 
-    list1: "High-impact advertising strategies across multiple platforms.", 
-    list2: "Driving highly qualified traffic to your digital properties.", 
-    list3: "Focus on generating sales, capturing leads, and more.", 
-    list4: "Maximizing the return on your online presence.", 
+    emoji: "🎤", // Unique emoji for this service
   },
 ];
 ---
 
-<ContentSection title="Solutions" id="solutions">
+<head>
+  <!-- Add this line to import the Noto Color Emoji font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+  </style>
+</head>
+
+<ContentSection title="NEW ASSET CLASS" id="solutions">
   <Fragment slot="lead">
-    <span class="text-primary"></span>Arvrtise</span> accepts Bitcoin Love (L$VE, $RNT, HAI$, $CBO) Cash Money donations in exchange for
-    our solutions. This trickle-up approach empowers the creators economy, allowing our A-Team to grow as one tribe that does live business.</span
-    >
+    <span class="text-primary">W3W</span> properties are the new Bitcoin real estate asset class that anyone, even a 5th grader, can easily
+    understand and remember. We solved the problem of Gen-Z selling physical assets passed down to them by offering a digital alternative: the W3W property.
   </Fragment>
 
   {
@@ -111,25 +92,23 @@ const services: Array<ServiceItem> = [
                 {service.description}
               </p>
             </div>
-            <div class="my-6 justify-center md:my-12 md:w-1/2">
+            <div class="my-6 justify-center md:my-12 md:w-1/2 flex items-center justify-center">
               <div class="m-auto max-w-80 md:max-w-sm 2xl:max-w-lg">
-                <LottieAnimation
-                  src={`/lotties/${service.img}.json`}
-                  loop
-                  autoplay="visible"
-                />
+                <!-- Emoji with large size (10x) -->
+                <span class="twemoji" style="font-family: 'Noto Color Emoji', sans-serif; font-size: 10rem;">
+                  {service.emoji}
+                </span>
               </div>
             </div>
           </div>
         ) : (
           <div class="flex flex-col-reverse md:flex-row lg:max-h-[27rem] lg:min-h-[27rem] 2xl:max-h-[35rem]">
-            <div class="my-6 justify-center md:my-12 md:w-1/2">
+            <div class="my-6 justify-center md:my-12 md:w-1/2 flex items-center justify-center">
               <div class="m-auto max-w-80 md:max-w-sm 2xl:max-w-lg">
-                <LottieAnimation
-                  src={`/lotties/${service.img}.json`}
-                  loop
-                  autoplay="visible"
-                />
+                <!-- Emoji with large size (10x) -->
+                <span class="twemoji" style="font-family: 'Noto Color Emoji', sans-serif; font-size: 10rem;">
+                  {service.emoji}
+                </span>
               </div>
             </div>
             <div class="flex flex-col justify-center p-4 text-center md:w-1/2 md:items-start md:text-start">
@@ -149,5 +128,3 @@ const services: Array<ServiceItem> = [
     ))
   }
 </ContentSection>
-
-<!-- data-aos="fade-right" data-aos-duration="2000" data-aos-delay="250" data-aos-once="true" -->

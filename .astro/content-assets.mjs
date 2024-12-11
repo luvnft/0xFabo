@@ -1,0 +1,9 @@
+
+import __ASTRO_IMAGE_IMPORT_22eT4n from "/src/content/showcase/_images/astro-docs.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Fastro-docs.json";
+import __ASTRO_IMAGE_IMPORT_ZGTgMV from "/src/content/showcase/_images/designcember.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Fdesigncember.json";
+import __ASTRO_IMAGE_IMPORT_a73F9 from "/src/content/showcase/_images/corset.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Fcorset.json";
+import __ASTRO_IMAGE_IMPORT_40Ee0 from "/src/content/showcase/_images/divriots.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Fdivriots.json";
+import __ASTRO_IMAGE_IMPORT_G5XYE from "/src/content/showcase/_images/polinations.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Fpolinations.json";
+import __ASTRO_IMAGE_IMPORT_kCYhf from "/src/content/showcase/_images/firebase-blog.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Ffirebase-blog.json";
+export default new Map([["/src/content/showcase/_images/astro-docs.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Fastro-docs.json", __ASTRO_IMAGE_IMPORT_22eT4n], ["/src/content/showcase/_images/designcember.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Fdesigncember.json", __ASTRO_IMAGE_IMPORT_ZGTgMV], ["/src/content/showcase/_images/corset.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Fcorset.json", __ASTRO_IMAGE_IMPORT_a73F9], ["/src/content/showcase/_images/divriots.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Fdivriots.json", __ASTRO_IMAGE_IMPORT_40Ee0], ["/src/content/showcase/_images/polinations.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Fpolinations.json", __ASTRO_IMAGE_IMPORT_G5XYE], ["/src/content/showcase/_images/firebase-blog.png?astroContentImageFlag=&importer=src%2Fcontent%2Fshowcase%2Ffirebase-blog.json", __ASTRO_IMAGE_IMPORT_kCYhf]]);
+		

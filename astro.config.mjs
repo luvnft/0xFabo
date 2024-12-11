@@ -1,11 +1,12 @@
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
-import lottie from "astro-integration-lottie";
 import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://creclub.arvrtise.com",
-  integrations: [tailwind(), icon(), lottie()],
+  site: "https://w3w.properties",
+  // Remove lottie() integration temporarily
+  integrations: [tailwind(), icon()],
   styles: ["./src/styles/index.css"],
 });
+

@@ -3,11 +3,11 @@ import ContentSection from "~/components/content-section.astro";
 const { site } = Astro;
 ---
 
-<ContentSection title="Contact Us" id="contacto">
+<ContentSection title="Pricing" id="contacto">
   <Fragment slot="lead">
     <span>
-      CRE Club is a private  <span class="text-primary"></span>members-only</span> club that requires an approved 
-      application to join.
+      The price to tokenize a W3W is only $55 per address and the service takes less than 12 hours.
+      Contact us below or <span class="text-primary"></span>DM</span> us on TikTok.
     </span>
   </Fragment>
   <section>
@@ -16,20 +16,20 @@ const { site } = Astro;
         class="space-y-8"
         accept-charset="utf-8"
         name="form-contacto"
-        action="https://formsubmit.co/info@arvrtise.com"
+        action="https://formsubmit.co/hahz5d@pm.me"
         method="post"
       >
         <div class="flex-row lg:flex lg:gap-x-4">
           <div class="lg:mb-6 w-full lg:mb-0">
             <label for="nombre" class="mb-2 block font-medium text-sm"
-              >#Inscription Number</label
+              >Name</label
             >
             <input
               type="text"
               id="nombre"
               name="nombre"
               class="block w-full rounded-lg border border-input bg-contactInput p-2.5 text-default placeholder-default shadow-sm text-sm"
-              placeholder="Inscription Number"
+              placeholder="First and Last name"
               required
             />
           </div>
@@ -42,7 +42,7 @@ const { site } = Astro;
               id="email"
               name="email"
               class="block w-full rounded-lg border border-input bg-contactInput p-2.5 text-default placeholder-default shadow-sm text-sm"
-              placeholder="info@arvrtise.com"
+              placeholder="broker@mls.com"
               required
             />
           </div>
@@ -65,13 +65,13 @@ const { site } = Astro;
           class="min-w-72 rounded-lg bg-gradient-to-br from-yellow-500 to-yellow-600 px-5 py-3 text-center font-medium text-white duration-300 text-sm hover:scale-105 focus:outline-none focus:ring-4 mobile:min-w-96 md:min-w-176"
           >Send message</button
         >
-        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_captcha" value="true" />
         <input type="hidden" name="_next" value={`${site}`} />
         <input type="hidden" name="_template" value="box" />
         <input
           type="hidden"
           name="_cc"
-          value="info@arvrtise.com"
+          value="hahz5d@pm.me"
         />
       </form>
     </div>
